@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "launchId": "dd604b65-3235-4416-a6b1-de5cec73de7a",
+  "chainId": 1,
+  "sourceCommit": "8b369f4cb3b9d7c2db8737829384f18ec3d4e0d0",
+  "attestationHash": "720ee00f2d72133a149389887794491c185e10f72eeddc9ed9af1cc7651162da",
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "address": "0xea377724af393671357bc2f565679e10b539139f",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "abiPath": "abi/LaunchToken.json"
+    },
+    {
+      "name": "PimdRegistry",
+      "address": "0x99bf2c49b25bdff7baa36a248bd27072c90dfa35",
+      "abiHash": "bcac09059311cd96041fa2b593db57672b1497e297f9b31dc5157d046fafeb99",
+      "abiPath": "abi/PimdRegistry.json"
+    },
+    {
+      "name": "BoundaryProofVerifier",
+      "address": "0xa19a97b522cb379c2fb846a4b18589775f674ee9",
+      "abiHash": "1c2086200adf581210502d24e9314cb23c8914c1038e4c9ea9489bff4059a1ea",
+      "abiPath": "abi/BoundaryProofVerifier.json"
+    },
+    {
+      "name": "BoundaryOracle",
+      "address": "0x2ced79eba39ee972c6c4f7dd51a08f28dc034555",
+      "abiHash": "53c496a7aab8f875ce6e49a14420bd8fec3e3ae77f21163a656649e6b323316a",
+      "abiPath": "abi/BoundaryOracle.json"
+    },
+    {
+      "name": "PimdSwap",
+      "address": "0xf569b08ad92ab9b99c6dcce18938a55eacd3ae60",
+      "abiHash": "37e132bfe1b63fe4c80e68489597e97cac9b6da0b56fcd5e179f0248c4f798b9",
+      "abiPath": "abi/PimdSwap.json"
+    },
+    {
+      "name": "PimdMarkets",
+      "address": "0x6804ca9b86731056bb8e7976086c58e3e37047db",
+      "abiHash": "3b2d616a2adde4b2646603e0b9a543b2c0c0af1af118fb208d990524952ee226",
+      "abiPath": "abi/PimdMarkets.json"
+    }
+  ],
+  "assets": [
+    {
+      "path": "abi/BoundaryOracle.json",
+      "sha256": "886c65419d0173288735b8f1f6e8ba2893a7297fc1f31d7228d94f77bed27114"
+    },
+    {
+      "path": "abi/BoundaryProofVerifier.json",
+      "sha256": "499f97cff1b9e21646e14d12fb017669e029c9535e0a59e580b573d640678bcf"
+    },
+    {
+      "path": "abi/LaunchToken.json",
+      "sha256": "9578fcb499b4ba5fac51462a67a2654d9f803e0ea3af9bdb19130ff695808542"
+    },
+    {
+      "path": "abi/PimdMarkets.json",
+      "sha256": "8f79b173f7b867ff5eacf696e422106be06ccd4550c07cfb9734155a6bf9ea5c"
+    },
+    {
+      "path": "abi/PimdRegistry.json",
+      "sha256": "65e0b10d12518ee006d3995a94cce26772898691781fd711bfdcf7dd6563b93f"
+    },
+    {
+      "path": "abi/PimdSwap.json",
+      "sha256": "6129101a2a3b3bbd0c7c268a6357cbb76e3c059cd3ae1c6ff4d07f15e51ca62a"
+    },
+    {
+      "path": "assets/ccip-U2q8TKjW.js",
+      "sha256": "af80ca7c3bd71eacf1a22b5f91f908e0a33d582a1acaa7c518a4b5db86000fc7"
+    },
+    {
+      "path": "assets/dist-DFR9gBxX.js",
+      "sha256": "6368e70b0f7f85c67074b8f1c3044f1be74921636e5832894f62a7c8f8a8a110"
+    },
+    {
+      "path": "assets/hooks.module-DE9oX6xH.js",
+      "sha256": "18290b66f5736ddfcd375526f88fd55c2ecf072d6feee11d3554a78df4a3594f"
+    },
+    {
+      "path": "assets/index-3w-nmw0u.js",
+      "sha256": "c24743f574873401d046aa8719e5808069c40399cf10553232c5efd08e7e1a7b"
+    },
+    {
+      "path": "assets/index-BDQW6-cP.js",
+      "sha256": "d606329add949413856f29b8e113b10fae928164e86ece4be660ec1c62a799b7"
+    },
+    {
+      "path": "assets/index-acDe3GmE.css",
+      "sha256": "5997cc3fcb0d945db9cf55d5fe73196ff22539fba021a1edb4249cc497ce1dd7"
+    },
+    {
+      "path": "index.html",
+      "sha256": "a672645353fd4682fb45175acd23110c0ac17e982d8891f76e20505285670714"
+    },
+    {
+      "path": "logo.svg",
+      "sha256": "946e531c5db68cbecc25f38ee84cec9347a91180be9fdac62d6468e80b0d7817"
+    },
+    {
+      "path": "social.png",
+      "sha256": "5886f796a15f9e745edccefefd6a3381c641ad0e24bacd37a136780dc88b8cc9"
+    },
+    {
+      "path": "wallets/metamask.svg",
+      "sha256": "892c7dfab8c4ca5682878dda3f42f55a75195d7d365e4adb0832845f3a0a2135"
+    },
+    {
+      "path": "wallets/phantom.svg",
+      "sha256": "f841f8112e131259a2e5123177950099c79487e61e77971f4e193e6c374419eb"
+    },
+    {
+      "path": "wallets/rabby.svg",
+      "sha256": "dcae4de88ebfa10cffa1fe28df13d7c8c0b40736ef2b704f1f2fc348e777e443"
+    }
+  ],
+  "poolKey": {
+    "fee": 12500,
+    "hooks": "0x784ff9a3ac5d88a30bfff6f7f2a270161fbe6000",
+    "currency0": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "currency1": "0xea377724af393671357bc2f565679e10b539139f",
+    "tickSpacing": 60
+  },
+  "network": {
+    "chainId": 1,
+    "name": "Ethereum",
+    "testnet": false,
+    "rpcUrls": [
+      "https://ethereum-rpc.publicnode.com",
+      "https://eth.drpc.org"
+    ],
+    "explorer": "https://etherscan.io",
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "faucets": [],
+    "uniswapV4": {
+      "poolManager": "0x000000000004444c5dc75cb358380d2e3de08a90",
+      "universalRouter": "0x66a9893cc07d91d95644aedd05d03f95e1dba8af",
+      "quoter": "0x52f0e24d1c21c8a0cb1e5a5dd6198556bd9e1203",
+      "stateView": "0x7ffe42c4a5deea5b0fec41c94c136cf115597227",
+      "positionManager": "0xbd216513d74c8cf14cf4747e6aaa6420ff64ee9e",
+      "permit2": "0x000000000022d473030f116ddee9f6b43ac78ba3"
+    },
+    "pairToken": {
+      "address": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+      "symbol": "IMD",
+      "name": "Identity.md",
+      "decimals": 18
+    },
+    "otherPairTokens": [
+      {
+        "id": "fwa",
+        "address": "0xa0df17b5ac76ababa36e1450e2cbcd18a620c845",
+        "symbol": "FWA",
+        "name": "Fake World Assets",
+        "decimals": 18
+      }
+    ]
+  },
+  "walletAddChain": {
+    "chainId": "0x1",
+    "chainName": "Ethereum",
+    "rpcUrls": [
+      "https://ethereum-rpc.publicnode.com",
+      "https://eth.drpc.org"
+    ],
+    "nativeCurrency": {
+      "name": "Ether",
+      "symbol": "ETH",
+      "decimals": 18
+    },
+    "blockExplorerUrls": [
+      "https://etherscan.io"
+    ]
+  }
+}

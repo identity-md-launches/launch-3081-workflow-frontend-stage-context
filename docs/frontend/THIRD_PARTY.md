@@ -1,0 +1,9 @@
+# Frontend attribution
+
+- Interface guidance: Jakub Krehel's Better Interface, pinned at `267330e1adfc66a718fb65fa6918c1f06d0a689e`, MIT; implementation documentation guidance from Paul Bakaus's Impeccable, pinned at `9d715cc4f5564a990ca8345abfdd5df6dc9b41c8`, Apache-2.0. The assignment's combined notice/license is preserved in `licenses/Better-Interface-LICENSE.txt`.
+- Ethereum UX guidance: Austin Griffith's ethskills frontend-ux at `06ea4efa08076ff04f6ca4945ef4a2ca881115b0`, MIT; pinned notice in `licenses/Eth-Frontend-UX-LICENSE.txt`.
+- Locally bundled MetaMask, Rabby and Phantom wallet marks: [RainbowKit wallet connectors](https://github.com/rainbow-me/rainbowkit/tree/main/packages/rainbowkit/src/wallets/walletConnectors), MIT; `licenses/RainbowKit-LICENSE.txt`. Coinbase's inline mark follows the pinned wallet-connector guide. Marks identify their respective wallets; they are not the pIMD brand.
+- Rabby phone URL uses the public app handler's `_cmd=open-dapp` and `dapp` parameters: [Rabby Mobile handler](https://github.com/RabbyHub/rabby-mobile/blob/develop/apps/mobile/src/hooks/universalLink.ts), with its [universal-link prefix](https://github.com/RabbyHub/rabby-mobile/blob/develop/apps/mobile/src/constant/universalLink.ts). Other wallet app links follow the pinned vendor-linked connector reference. These links were inspected as code/URL construction, not tested with physical wallet applications.
+- UI dependencies and their exact resolved versions are in `web/package-lock.json`. React, Vite, wagmi, viem, TanStack Query and Lucide supply the component/runtime tooling. Package dependencies are installed normally, not vendored into Git.
+
+The pIMD brand SVG and share graphic were authored for this frontend. The share PNG is rendered from `web/design/social.svg` by `web/scripts/generate-social.mjs`; no remote imagery or font asset is loaded by the website.

@@ -1,0 +1,46 @@
+{
+  "manifestSha256": "de217974fcdcc6932dd905e0be2f70a5b9696ce577c7b0f92fb533e0219867ee",
+  "mode": "live reads, no transactions",
+  "results": [
+    {
+      "name": "live runtime deployment, registry and contract reads",
+      "passed": true
+    },
+    {
+      "name": "layout has no horizontal overflow at 320",
+      "passed": true
+    },
+    {
+      "name": "layout has no horizontal overflow at 390",
+      "passed": true
+    },
+    {
+      "name": "390 first screen contains product, wallet and trade action",
+      "passed": true
+    },
+    {
+      "name": "layout has no horizontal overflow at 768",
+      "passed": true
+    },
+    {
+      "name": "layout has no horizontal overflow at 1440",
+      "passed": true
+    },
+    {
+      "name": "theme changes all surfaces without a navigation",
+      "passed": true
+    },
+    {
+      "name": "live boundary witness: Proof verified. Ready to record or attach to your next order or claim.",
+      "passed": true
+    },
+    {
+      "name": "live Quoter simulation returned pIMD output and a slippage minimum",
+      "passed": true
+    },
+    {
+      "name": "no uncaught browser errors or missing export resources",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "checkedAtUtc": "2026-11-06T22:12:12.870616+00:00",
+  "sourceCommit": "8b369f4cb3b9d7c2db8737829384f18ec3d4e0d0",
+  "chainId": 1,
+  "pinnedHandoffMatches": true,
+  "pinnedNetworkMatches": true,
+  "contractBindings": 6,
+  "sha256Assets": 18,
+  "exactAssetInventory": true,
+  "exportBytes": 1572309,
+  "manifestSha256": "de217974fcdcc6932dd905e0be2f70a5b9696ce577c7b0f92fb533e0219867ee"
+}

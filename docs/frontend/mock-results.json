@@ -1,0 +1,110 @@
+{
+  "manifestSha256": "de217974fcdcc6932dd905e0be2f70a5b9696ce577c7b0f92fb533e0219867ee",
+  "mode": "mock wallets and RPC only",
+  "results": [
+    {
+      "name": "runtime configuration and all six ABI loads",
+      "passed": true
+    },
+    {
+      "name": "layout has no horizontal overflow at 320",
+      "passed": true
+    },
+    {
+      "name": "layout has no horizontal overflow at 390",
+      "passed": true
+    },
+    {
+      "name": "390 first screen contains product, wallet and trade action",
+      "passed": true
+    },
+    {
+      "name": "layout has no horizontal overflow at 768",
+      "passed": true
+    },
+    {
+      "name": "layout has no horizontal overflow at 1440",
+      "passed": true
+    },
+    {
+      "name": "theme changes all surfaces without a navigation",
+      "passed": true
+    },
+    {
+      "name": "wallet sheet closes with Escape and hides generic injected naming",
+      "passed": true
+    },
+    {
+      "name": "EIP-6963 connection and unknown-chain add/switch fallback",
+      "passed": true
+    },
+    {
+      "name": "exact-amount USDC approval is separate from deposit",
+      "passed": true
+    },
+    {
+      "name": "deposit simulates and waits for a confirmed receipt",
+      "passed": true
+    },
+    {
+      "name": "pending wallet confirmation locks Escape, dismissal and duplicate submissions",
+      "passed": true
+    },
+    {
+      "name": "wallet rejection stays visible and offers retry",
+      "passed": true
+    },
+    {
+      "name": "amount input keeps its value and keyboard focus across timer updates",
+      "passed": true
+    },
+    {
+      "name": "market Buy Up sends bounded IOC with six-decimal shares",
+      "passed": true
+    },
+    {
+      "name": "Down asset-only mode enforces buffer and exact swap cap",
+      "passed": true
+    },
+    {
+      "name": "Down book reverses bid/ask and shows the selected outcome USD value",
+      "passed": true
+    },
+    {
+      "name": "Down prices above one show the full-fill USDC credit",
+      "passed": true
+    },
+    {
+      "name": "simulation failure prevents wallet transaction submission",
+      "passed": true
+    },
+    {
+      "name": "ERC20 approval → Permit2 approval → simulated Universal Router execute",
+      "passed": true
+    },
+    {
+      "name": "complete confirmed-event scan and truthful empty leaderboard",
+      "passed": true
+    },
+    {
+      "name": "connected-owner period control calls the registry",
+      "passed": true
+    },
+    {
+      "name": "all five pages reflow at 320 and 390 pixels",
+      "passed": true
+    },
+    {
+      "name": "missing deployment code blocks signing and connection retry recovers",
+      "passed": true
+    },
+    {
+      "name": "missing fee-reference price disables signing and exposes a proof recovery action",
+      "passed": true
+    },
+    {
+      "name": "no uncaught browser errors or missing export resources",
+      "passed": true
+    }
+  ]
+}

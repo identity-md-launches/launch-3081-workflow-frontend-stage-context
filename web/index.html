@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101816" />
+    <title>pIMD · Onchain prediction markets</title>
+    <meta
+      name="description"
+      content="Bet UP or DOWN on IMD. Fully onchain prediction markets, backed by USDC and IMD on Ethereum."
+    />
+    <meta property="og:title" content="pIMD · What’s your position?" />
+    <meta
+      property="og:description"
+      content="Trade the next move in IMD. Fully onchain Up/Down markets on Ethereum."
+    />
+    <meta property="og:image" content="./social.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="./logo.svg" />
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("pimd-theme") || "light";
+      } catch {
+        document.documentElement.dataset.theme = "light";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

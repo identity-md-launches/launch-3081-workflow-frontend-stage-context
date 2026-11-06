@@ -1,0 +1,116 @@
+{
+  "chainId": 1,
+  "poolKey": {
+    "fee": 12500,
+    "hooks": "0x784ff9a3ac5d88a30bfff6f7f2a270161fbe6000",
+    "currency0": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "currency1": "0xea377724af393671357bc2f565679e10b539139f",
+    "tickSpacing": 60
+  },
+  "repoUrl": "https://github.com/identity-md-launches/launch-3075-workflow-contract-stage-context",
+  "version": 1,
+  "launchId": "dd604b65-3235-4416-a6b1-de5cec73de7a",
+  "manifest": {
+    "kind": "evm_project",
+    "pool": {
+      "fee": 12500,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336",
+      "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7"
+    },
+    "notes": "pIMD: a fully onchain Up/Down prediction market on the IMD price (Ethereum mainnet). LaunchToken (pIMD) is the fixed-supply 18-decimal launch token with no constructor arguments, no owner and no mint, fee, pause or upgrade functions; the factory splits its supply. Application contracts, in constructor dependency order: PimdRegistry(owner) holds the market periods (1 h, 1 day, 1 week, calendar month) and assets (IMD at launch), with the fixed IMD->ETH->USDC Uniswap v4 price and swap path; the owner may add periods and assets for future markets. BoundaryProofVerifier() verifies RLP block headers and eth_getProof storage proofs of PoolManager slot0 for boundary prices; it is stateless. BoundaryOracle(registry, verifier) records one price per boundary from proofs, with the optimistic 10 IMD bond fallback and the IdentityMD oracle dispute path. PimdSwap(registry) performs the exact-output IMD->USDC swap used to pay the USDC leg of a DOWN order. PimdMarkets(owner, registry, oracle, swapper) holds internal USDC/IMD balances, mints and settles UP/DOWN share pairs, runs the mirrored order book and collects maker/taker fees. $owner, the launch's owner, is the only privileged role: it receives market fees and configures future periods and assets in the registry; it has no access to user funds and no pause or upgrade. The factory (msg.sender) is never an owner. Constructors are nonpayable, make no external calls and need no initialization calls. No application contract is allocated any launch supply; PimdMarkets only holds USDC and IMD that users deposit after launch. The pool pairs pIMD with IMD at the launch policy's 1.25% fee; the factory supplies the LP, MerkleDistributor and the initialization-only pool guard. The deployer derives the opening price from the policy's 2,500 IMD opening cap; pool.initialPrice is written as the launch facts give it.",
+    "token": {
+      "name": "pIMD",
+      "symbol": "pIMD",
+      "contract": "LaunchToken",
+      "decimals": 18
+    },
+    "contracts": [
+      {
+        "contract": "PimdRegistry",
+        "constructorArgs": [
+          "$owner"
+        ]
+      },
+      {
+        "contract": "BoundaryProofVerifier",
+        "constructorArgs": []
+      },
+      {
+        "contract": "BoundaryOracle",
+        "constructorArgs": [
+          "$contract:PimdRegistry",
+          "$contract:BoundaryProofVerifier"
+        ]
+      },
+      {
+        "contract": "PimdSwap",
+        "constructorArgs": [
+          "$contract:PimdRegistry"
+        ]
+      },
+      {
+        "contract": "PimdMarkets",
+        "constructorArgs": [
+          "$owner",
+          "$contract:PimdRegistry",
+          "$contract:BoundaryOracle",
+          "$contract:PimdSwap"
+        ]
+      }
+    ]
+  },
+  "contracts": [
+    {
+      "name": "LaunchToken",
+      "txHash": "0x9a5875556479dc4f27ca4755b979f103724cafbfb8156e473e93779a858c9311",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0xea377724af393671357bc2f565679e10b539139f",
+      "blockNumber": 26358290,
+      "creationCodeHash": "8d2afb5f0636c8f50a07849ae6774c96eccda2497ee3d2ef15ebb6b30408a30b"
+    },
+    {
+      "name": "PimdRegistry",
+      "txHash": "0x9a5875556479dc4f27ca4755b979f103724cafbfb8156e473e93779a858c9311",
+      "abiHash": "bcac09059311cd96041fa2b593db57672b1497e297f9b31dc5157d046fafeb99",
+      "address": "0x99bf2c49b25bdff7baa36a248bd27072c90dfa35",
+      "blockNumber": 26358290,
+      "creationCodeHash": "a5178bdb32a35a2a8bcd5f9d672c90e7141278ef5506a189db48c90dba5fbc70"
+    },
+    {
+      "name": "BoundaryProofVerifier",
+      "txHash": "0x9a5875556479dc4f27ca4755b979f103724cafbfb8156e473e93779a858c9311",
+      "abiHash": "1c2086200adf581210502d24e9314cb23c8914c1038e4c9ea9489bff4059a1ea",
+      "address": "0xa19a97b522cb379c2fb846a4b18589775f674ee9",
+      "blockNumber": 26358290,
+      "creationCodeHash": "0d0ca2b9637855a067cb18be8694ebb7a5eb1093f8da7520bbfaac7071c42439"
+    },
+    {
+      "name": "BoundaryOracle",
+      "txHash": "0x9a5875556479dc4f27ca4755b979f103724cafbfb8156e473e93779a858c9311",
+      "abiHash": "53c496a7aab8f875ce6e49a14420bd8fec3e3ae77f21163a656649e6b323316a",
+      "address": "0x2ced79eba39ee972c6c4f7dd51a08f28dc034555",
+      "blockNumber": 26358290,
+      "creationCodeHash": "d0bf989dbbae5b569eb0d405bd6193af5b538f146f176644097864500f6b2ba6"
+    },
+    {
+      "name": "PimdSwap",
+      "txHash": "0x9a5875556479dc4f27ca4755b979f103724cafbfb8156e473e93779a858c9311",
+      "abiHash": "37e132bfe1b63fe4c80e68489597e97cac9b6da0b56fcd5e179f0248c4f798b9",
+      "address": "0xf569b08ad92ab9b99c6dcce18938a55eacd3ae60",
+      "blockNumber": 26358290,
+      "creationCodeHash": "88e9bd5aa17f3be6d666b60e9bb8b806919b13097dcb5cdad9969995d3625ab3"
+    },
+    {
+      "name": "PimdMarkets",
+      "txHash": "0x9a5875556479dc4f27ca4755b979f103724cafbfb8156e473e93779a858c9311",
+      "abiHash": "3b2d616a2adde4b2646603e0b9a543b2c0c0af1af118fb208d990524952ee226",
+      "address": "0x6804ca9b86731056bb8e7976086c58e3e37047db",
+      "blockNumber": 26358290,
+      "creationCodeHash": "678cfb34486176a3cbb474d5d415c4ae445618fbe9e9b5ca8a572745d75edbaa"
+    }
+  ],
+  "sourceCommit": "8b369f4cb3b9d7c2db8737829384f18ec3d4e0d0",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "720ee00f2d72133a149389887794491c185e10f72eeddc9ed9af1cc7651162da"
+}
